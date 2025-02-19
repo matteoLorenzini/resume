@@ -1,0 +1,340 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%	
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\begin{document}
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{nth}
+\usepackage{verbatim}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Matteo}{Lorenzini}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Engerthstra{\ss}e,88 1-14}{1200, Wien}{\"Osterreich}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+43~0~6607989244}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{matteo.lorenzini@gmail.com - matteo.lorenzini@oeaw.ac.at}                             % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{http://it.linkedin.com/pub/matteo-lorenzini/13/a96/646}                        % optional, remove / comment the line if not wanted
+\social[twitter]{archeomatt}                             % optional, remove / comment the line if not wanted
+\social[github]{matteoLorenzini}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+\usepackage{bibentry}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2014}{Graduate School in Medieval Archaeology}{University of Sassari}{Sassari}{\textit{GPA -- 50/50 cum laude}}{First Class Honours, Specialized in Digital Humanities}
+\cventry{2006--2009}{Master's Degree in Archaology}{University of Pisa}{Pisa}{\textit{GPA -- 110/110 cum laude}}{First Class Honours, Specialized in Digital Archaeology} 
+\cventry{2002--2005}{Bachelor Degree in Archaeology}{University of Pisa}{Pisa}{\textit{GPA -- 104/110}}{First Class Honours, Specialized in Medieval Archaeology }
+
+\section{Graduate School Thesis}
+\cvitem{Title}{\emph{Semantic Web and Cultural Heritage: Europeana's API for the representation and visualization of digital resources}}
+\cvitem{Supervisors}{Professor Marco Rendeli \& Andrea D'Andrea}
+\cvitem{Description}{This thesis aims to give an overview of smenatic web paradigm applied to cultural heritage with a focus on the analysis of Europeana Data Model and the use of Europeana's API for the integration and visualization of metadata elements and contents in third parts on Digital Humanites Domain }
+
+\section{Master's Degree Thesis }
+
+\cvitem{Title}{\emph{Data and archaeological knowledge: The CityGML model applied to data mapping of 3D objects from Uchi Maius -Tunisia-}}
+\cvitem{Supervisors}{Professor Marco Milanese \& Associate Andrea D'Andrea}
+\cvitem{Description}{The thesis raisese the problem related to the semantical defintion of 3D feature proposing the use of CityGML as application profile for the definition of the architectural elements and archaeological artifacts as semantical concepts.}
+
+\section{Bachelor Thesis}
+
+\cvitem{Title}{\emph{Archaeological quantification of artifacst: methods and techniques}}
+\cvitem{Supervisors}{Professor Marco Milanese \& Associate Silvano Antonelli}
+\cvitem{Description}{The thesis talks about the quantification of archaeological data analizing different methods and techniques.}
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{May 2015--actual enployed}{Researcher}{\textsc{Austrian Academy of Science}}{Austrian Center for Digital Humanitites, Sonnefelsgasse 19, 1010, Wien}{}{Research activities carried out in Parthenos project
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Mapping of CMDI model to CIDOC-CRM ontology
+\item Development of Parthenos Entity model
+\item Optimization of SPARQL query over different datasets
+\end{itemize}
+Personal research activity:
+\begin{itemize}
+\item Study and development of hybrid SPARQL query
+\end{itemize}}
+
+
+
+%------------------------------------------------
+
+\cventry{May 2014--Apr.2015}{R\&D operation officer-found rising}{\textsc{Hyperborea s.r.l}}{Polo Tecnologico di Navacchio, Via Giuntini, Navacchio (PI)}{}{Writing project deliverable for European Projects SDI4APPS and LINDA both focused on  management and visualization of Linked Open Datadata using cloud architecture in Digital Humanities  domain, WP leader for SDI4APPS project.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Definition of technical testing methodology for cloud components IAAS- Agile method-
+\item Development of API in Digital Humanities domain
+\item Development of semantical data model
+\item Data mining
+\item Development of solutions and platforms concerning:
+\begin{itemize}
+\item Data representation
+\item Data visualization
+\item Data harmonization
+\end{itemize}
+\item Development and testing of NoSQL platform and SPARQL end-point.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2013}{Visiting Researcher}{\textsc{Stanford University}}{Department of History, Center for Textual and Spatial Analysis, Stanford, California 94305}{}{ Study and development of predictive geographical model, Representation and Visualization of Big Data repositories in Digital Humanities domain, Study and definition of ontological and conceptual model for data representation, Textual Analysis and Textual Data Mining
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Ontology modelling
+\item Natural Language Processing and data visualization
+\item Development of geographical model and GIS
+\end{itemize}}
+
+
+%------------------------------------------------
+
+\cventry{2009--2012}{Operation Officer and Project Manager}{\textsc{Ministry of Cultural Heritage and Activities}}{ICCU, Viale Castro Pretorio 105, Roma, Cultura Italia project www.culturaitalia.it }{}{ Operation Officer in charge both of data mapping and data harmonization of metadata harvested in CulturaItalia repository both of data mapping from PICO applicationprofile to ESE/EDM data models.  Supporting Cultura Italia's content provider during ingestion process: data mapping in PICO Application profile, development of OAI-PMH repository, metadata validation and metadata harvesting. Coordination of contents provider's ingestion plan. Coordination of R\&D sector. 
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Ontology modelling
+\item Development of Linked Open Data models
+\item Skossification of PICO application profile
+\item Data Mapping and Data Harmonization:
+\begin{itemize}
+\item PICO Application Profile to ESE
+\item PICO Application to EDM
+\item PICO Application to CIDOC-CRM
+\end{itemize}
+\item Writing deliverable project
+\item Development of Proof of Concept architecture for Linked Data management
+\item Development of SPARQL end-point of \url{http://dati.culturaitalia.it/?locale=it}
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2011}{Researcher}{\textsc{Universita Politecnica delle Marche}}{Department of Information Engineering }{}{ Study and development of knowledge model and their application in semantic annotation on Digital Humanities domain. Research activities carried out in SemLib european project -Semantic web tools for digital libraries-
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Definition of ontological and concaptual model
+\item Ontology modelling
+\item Data Mapping 
+\begin{itemize}
+\item CIDOC-CRM
+\item SKOS
+\end{itemize}
+\item Writing deliverable project
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2010-2011}{Data Scientist}{\textsc{ETC WARE s.r.l.}}{Via Etna 13, Roma }{}{ Study and development of knowledge model based on CIDOC-CRM ontology and data mapping from ICCD schema to CIDOC for baseculturale.it project
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Definition of ontological and concaptual model
+\item Data Mapping 
+\begin{itemize}
+\item CIDOC-CRM
+\item SKOS
+\end{itemize}
+\item Writing deliverable project
+\item Development of data mapping stylesheet from ICCD schema to CIDOC
+\item Data Validation
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2006-2008}{Junior Researcher}{\textsc{Universita degli Studi di Firenze}}{PIN, P.zza Ciardi Prato -EPOCH project-}{}{ Study and development of knowledge model based on CIDOC-CRM ontology and data mapping from ICCD schema to CIDOC for archaeological data. Study and development of semantic GIS using GML standard
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Definition of ontological and concaptual model
+\item Data Mapping 
+\begin{itemize}
+\item CIDOC-CRM
+\item GML
+\end{itemize}
+\item Writing deliverable project
+\item Development of data mapping stylesheet from ICCD schema to CIDOC
+\item Development of Geographical Information System platform
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Advanced}{Conversationally fluent}
+\cvitemwithcomment{German}{Basic}{Basic words and phrases only}
+\cvitemwithcomment{French}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{IT skills}
+\subsection{Programming Languages}
+\cvitem{Basic}{Scala, Java}
+\cvitem{Intermediate}{Ruby}
+\cvitem{Advanced}{Python, PHP, XML,  XSL, XSLT, RDF, OWL, OWL-DL, SKOS, R }
+\subsection{Tools and Services}
+\cvitem{GIS}{Grass, PostGIS, QGIS, MapServer, Geoserver}
+\cvitem{Data Management}{PostgreSQL, MySQL, MongoDB }
+\cvitem{Triple Store and reasoning engine}{Sesame, Virtuoso, Blazegraph, Jena}
+\cvitem{Data Indexing}{Apache Solr, Stanbol}
+\cvitem{Data Visualization}{D3js, Bokeh, MatLab}
+\cvitem{Platform}{Unix, Osx}
+\subsection{Ontologies and Metadata Profiles}
+\cvitem{Ontologies}{CIDOC-CRM, DOLCE, EDM}
+\cvitem{Metadata profile}{Dublin Core, Mets, VRA, PICO, TEI, CMDI}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+\cvitem{}{Excellent written and verbal communication skills}
+\cvitem{}{Confident, articulate, and professional speaking abilities (and experience)}
+\cvitem{}{Empathic listener and persuasive speaker}
+\cvitem{}{Writing creative or factual}
+\cvitem{}{Speaking in public, to groups, or via electronic media}
+\cvitem{}{Excellent presentation and negotiation skills}
+
+
+%\section{References}
+%\begin{cvcolumns}
+  %\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  %\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  %\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitemisc{pub1,pub2,pub3,pub4,pub5,pub6,pub7,pub8,pub9,pub10}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\bibliography{publications}
+
+\bibliographystyle{plain}
+\bibentry{pub1,pub2,pub3,pub4,pub5,pub6,pub7,pub8,pub9,pub10,pub11,pub12}
+
+
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+\begin{comment}
+% recipient data
+\recipient{ Austrian Academy of Sciences}{Austrian Centre for Digital Humanities,\\Sonnenfelsgasse 19/8, 1010 \\ Vienna}
+\date{February 25, 2015}
+\opening{To whom it may concern,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing to apply for the position  offered by your institute as Data Analyst. My name
+is Matteo Lorenzini. I'm an archaeologist with strong background and competences in digital humanities
+ and digital archaeology. Thanks to my ITs skills I had the opportunity to work
+in many European projects. In this context I think one of the most important experience was represented by my partecipation in European Network
+of Excellence EPOCH. Thanks to  EPOCH project I have been involved in different research groups where
+I gained the opportunity to deepen my knowledge in digital management of cultural heritage and semantics,
+mainly concerning the management and semantic definition of archaeological data through CIDOC-CRM ontology. 
+During the project I have applied CIDOC-CRM to the conceptual and semantic mapping of ICCD data schema and different kind of datasets referred to archaeological domain. 
+Another important milestone is represented by my work at Italian Ministry of Cultural Heritage and Activities in Cultura Italia project, the italian digital library, as
+Project Manager and IT consultant. I have focused my activities in data and metadata mapping (using XML
+and XSLT technology) and  representation  using CIDOC-CRM ontology. During my experience at Cultura Italia I have worked also As Project Manager I was involved in the engineering of the digital library
+coordinating the activities both related to the development of triple store and metadata indexing
+engine (using Apache Solr) both related to the visualization and fruition of metadata content using
+facet browsing system and to the development of SPARQL endpoint (www.dati.culturaitalia.it). During this job experience I have acquired a deep knowledge on
+metadata definitions using CIDOC-CRM and Europeana Data Model, metadata exsposition as LOD and skossification
+process. During my period at Cultura Italia I had also the opportunity both to work with Europeana
+team concerning data mapping from PICO application profile to EDM both to take part in
+some workshop related to engagement of different content provider in Europeana. During the same period I've worked also as researcher at Universit\'a   Politecnica delle
+Marche in SemLib -Semantic Tool for Digital Libraries- project for that concerning the semantical
+management of annotation of digital contents and as Data Scientist for an IT company focusing my
+activities on to data mapping from RDBMS system to CIDOC-CRM conceptual schema.
+
+However I think that the most important experience for my education in digital humanitites and digital archaeology is represented by my collaboration with Center for Textual and Spatial Analysis at  Stanford University (CA, USA). In 2012 I
+won a fellowship application from the University of Sassari to making a postgraduate school of
+specialization in Digital Humanities. Here I have carried a special study plan focused on digital
+archeology in particular on the study and development of ontological model for the representation
+and visualization of descriptive metadata from digital archives and repositories. Thanks to my
+fellowship I went to Stanford University in 2013 as visiting researcher at the Department of History,
+CESTA lab -Center for Textual and Spatial Analysis- with a project focused on the semantical representation and visualization of geographical archaeological feature. Here I have improved my
+knowledge on the development of big data management-analysis and data
+visualization-representation (mainly using NodeJS, D3JS and SCALA language program)
+participating in many workshops organized by the department.
+
+Till December 2014  I've worked as R\&D operations officer for
+an Italian IT company (fixed term contract). Here I have focused my activities in two
+european projects: SDI4APPS and Linda. The first one seeks to build a cloud-based framework
+with open API for data integration focusing on the development of six pilot applications. The
+project draws along the lines of INSPIRE, Copernicus and GEOSS and aspires to build a WIN-WIN
+strategy for building a successful business for hundreds of SMEs on the basis of European spatial
+data infrastructures. The second one represent an ecosystem for Linked Data publication and
+consumption apps (visualization,exploration, data mining), which can be bound together in a
+dynamic manner, leading to new, unpredicted insights. For both of projects I'm involved in writing
+project deliverable.
+
+Thanks to my all past  experience I have matured a well defined aptitude for teamwork.  
+ I consider this job position as an ideal place to work where I can make
+in practice my special background focused on digital humanities and digital archaeologyin a really enthusiastic and collaborative
+team where I can develop and share a specific expertise in an international context.
+
+ I hope you will consider my application congruous to yours expectations.
+
+
+
+\makeletterclosing
+\end{comment}
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

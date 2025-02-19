@@ -1,0 +1,47 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         resume.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Jan 7th, 2022
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+\usepackage{academicons}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Matteo Lorenzini} % Name Hereu
+\def\email{matteo.lorenzini@gmail.com}
+\def\LinkedIn{matteo-lorenzini-646a9613} % linkedin.com/in/______
+\def\github{matteoLorenzini} % github username
+\def\orcid{0009-0009-4159-5614}
+%\def\role{Ontologist} % JOB TITLE
+
+\input{_header}
+\begin{document}
+%\input{sections/objective}
+\section{Education}
+\input{sections/education}
+\section{Experience}
+\input{sections/experience}
+% make a newpage wherever it is a clean break
+% \newpage
+
+\section{Projects}
+\input{sections/activities}
+%\section{Internship}
+%\input{sections/internship}
+
+%\section{Skills}
+%\input{sections/skills}
+
+\end{document}

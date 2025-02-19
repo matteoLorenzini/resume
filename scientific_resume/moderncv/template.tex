@@ -1,0 +1,447 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%	
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\begin{document}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{nth}
+\usepackage{verbatim}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Matteo}{Lorenzini}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Eichenstra{\ss}e, 19}{4054, Basel}{Switzerland}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+41-778167726}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{matteo.lorenzini@gmail.com}                             % optional, remove / comment the line if not wanted
+\homepage{https://orcid.org/0009-0009-4159-5614}                         % optional, remove / comment the line if not wanted
+\social[orcid]{https://orcid.org/0009-0009-4159-5614}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{archeomatt}                             % optional, remove / comment the line if not wanted
+\social[github]{matteoLorenzini}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+\usepackage{bibentry}
+
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------https://www.overleaf.com/project/5b956b5853418d5260ba8f04------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+
+\cventry{2017--2022}{PhD Software Engineering - Digital Humanities}{University of Trento, Fondazione Bruno Kessler -FBK- }{Trento}{\textit{}}
+{\begin{itemize}
+\item Addressed the problem of automatic evaluation of the quality of metadata in digital cultural collection. PhD thesis, \textit{Metadata Quality Evaluation in Cultural Heritage Domain}.
+\begin{itemize}
+    \item Proposed a solution using machine learning (binary classification and NLP) for metadata quality evaluation and entity extraction.
+    \item Built a model for machine learning classification.
+    \item Developed a  dataset containing 100K+ annotated descriptions of art objects and archaeological artifacts.
+\end{itemize}
+\end{itemize}}
+
+\cventry{2012--2014}{School of Specialization in Archaeology}{University of Sassari}{Sassari}{\textit{}}{\begin{itemize}
+    \item Investigated the settlement dynamics in the medieval era in the Mediterranean basin.
+    \item Developed a predictive GIS model for studying settlement dynamics on the island of Pantelleria.
+     \item Developed a framework for 3D modeling and representation of archaeological artifacts and structures using photogrammetric techniques.
+     \item Analyzed the issue of data accessibility and utilization of archaeological data through digital infrastructure.
+\end{itemize}}
+\cventry{2006--2009}{Master Degree (MA) in Archaeology}{University of Pisa}{Pisa}{\textit{}}{\begin{itemize}
+    \item Analyzed the settlement patterns in northwestern Sardinia.
+    \item Developed a predictive geographic model for archaeological risk.
+    \item Analyzed the transition period between the Roman and the medieval period in North Africa.
+\end{itemize}} 
+\cventry{2002--2005}{Bachelor Degree (BA) in Archaeology}{University of Pisa}{Pisa}{\textit{}}{ }
+
+
+\section{Experience}
+
+\subsection{}
+
+%------------------------------------------------
+\cventry{2024--Present}{Research Project Specialist - Digital Library}{\textsc{University Library}}{Basel}{}{
+\newline{}\newline{}
+\textbf{Detailed activities}:
+\begin{itemize}
+\item Providing insights on building digital infrastructures at scale.
+\item Providing insights on creating metadata and semantic mapping templates applicable at scale.
+\item Utilizing Named Entity Recognition (NER) powered by large language models (LLMs) to extract entities from textual resources, enriching metadata and improving discoverability across digital collections.
+\item Applying LLM-based NLP techniques to analyze and enrich metadata.
+\end{itemize}
+}
+
+%------------------------------------------------
+\cventry{2022--2024}{Ontologist II}{\textsc{Amazon}}{Munich}{}{
+\newline{}\newline{}
+\textbf{Detailed achievements}:
+\begin{itemize}
+\item Contributed to the implementation of the Amazon semantic infrastructure.
+\item Contributed to the maintenance of the Amazon core ontology.
+\item Implemented the Product Compatibility Ontology, enabling intelligent compatibility recommendations.
+\item Designed and deployed fine-tuned LLMs for automated categorization of product metadata, improving accuracy and scalability in ontology management workflows.
+\item Utilized transformer models (e.g., BERT, GPT) to extract domain-specific knowledge from product descriptions, enhancing semantic enrichment processes.
+\item Developed and tested prompt engineering techniques to support dynamic querying and semantic search capabilities for large-scale product datasets.
+\end{itemize}
+}
+
+%------------------------------------------------
+\cventry{2019--2022}{Researcher}{\textsc{ETH}}{GTA Digital}{Zurich}{
+\newline{}\newline{}
+Research activities conducted both at the Institute for the History and Theory of Architecture (gta) of ETH and within the Swiss Art Research Infrastructure (SARI).
+Main outcome: \href{https://researchportal-public.gta.arch.ethz.ch/resource/Start}{GTA research portal} based on Research Space infrastructure.
+\newline{}\newline{}
+\textbf{Detailed achievements} 
+\begin{itemize}
+\item Developed a hybrid conceptual representation model for archival resources using RDF and OWL, enhancing metadata frameworks in digital archives.
+\item Automatically modeled and processed 150,000 records in alignment with the CIDOC-CRM ontology.
+\item Streamlined workflows by automating manual processes, optimizing metadata delivery, and redesigning infrastructure to improve scalability.
+\item Advanced Python scripting for the ETL process, ensuring efficient and reliable metadata transformation.
+\item Provided innovative solutions for data acquisition and metadata structuring, supporting team collaboration in digital archive management.
+\end{itemize}
+\textbf{Research activity}
+\begin{itemize}
+\item Conducted research on hybrid conceptual representation models for architectural and archaeological resources, integrating RDF and OWL.
+\item Developed automated methods for data modeling in large architectural and archaeological datasets, utilizing the CIDOC-CRM ontology.
+\item Explored scalable strategies for data management in architecture and archaeology, focusing on automation, optimal data delivery, and infrastructure redesign.
+\item Applied computer vision techniques to interpret historical images and data in archaeology and architecture, using advanced algorithms to analyze artifacts and excavation findings.
+\end{itemize}
+\textbf{Teaching activity}
+\begin{itemize}
+\item Led seminars on knowledge management and digital collections, emphasizing applications in cultural heritage preservation.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2017--2018}{Metadata Specialist}{\textsc{Ministry of Cultural Heritage and Activities}}{}{Rome}{ 
+\newline{}\newline{}
+\textbf{Detailed achievements}
+\begin{itemize}
+\item Designed and Modelled the PICO metadata schema in compliance with CIDOC-CRM ontology.
+\item Built and Implemented the Linked Open Data infrastructure in Cultura Italia digital library: \href{https://dati.culturaitalia.it/}{Dati Cultura Italia}
+\item Revised the PICO metadata profile to align with the ICCD 3.0 schema.
+\url{}
+\end{itemize}}
+%------------------------------------------------
+\cventry{2015--2019}{Researcher}{\textsc{Austrian Academy of Science}}{Austrian Center for Digital Humanitites, Wien}{}{
+\newline{}\newline{}
+Research activities conducted within the \href{https://www.parthenos-project.eu/}{PARTHENOS} project.
+\newline{}\newline{}
+\textbf{Detailed achievements}
+\begin{itemize}
+\item Supported research infrastructure in the humanities by designing the PARTHENOS-PE ontology.
+\item Designed the CLARIN-CMDI metadata profile using CIDOC-CRM and PARTHENOS-PE ontology.
+\item Created a Python script to automatize the creation of RDF graphs ( 340k records.).
+\item Identified, designed, and implemented internal process improvements.
+\end{itemize}
+\textbf{Research activities}
+\begin{itemize}
+\item Conducted research on improving archaeological data management by designing and implementing domain-specific ontologies.
+\item Enhanced data interoperability in archaeology through the utilization of CIDOC-CRM and PARTHENOS-PE ontologies, along with metadata standards, to improve metadata profiling.
+\item Developed Python scripts to automate the creation and integration of RDF graphs in large-scale archaeological datasets, resulting in more efficient data processing.
+\end{itemize}
+\textbf{Teaching activity}
+\begin{itemize}
+    \item Semester-long course (4 ECTS credits) in Knowledge Representation and Management in Archaeology at the University of Vienna.
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2013}{Visiting Researcher}{\textsc{Stanford University}}{Department of History, Center for Textual and Spatial Analysis, Stanford, California 94305}{}{Study and definition of knowledge model for Textual Analysis and Textual Data Mining}
+
+%------------------------------------------------
+
+\cventry{2009--2012}{Metadata Specialist}{\textsc{Ministry of Cultural Heritage and Activities}}{}{Rome}{ 
+\newline{}\newline{}
+\textbf{Detailed achievements}
+\begin{itemize}
+\item Defined best practices for metadata implementation.
+\item Developed the conceptual representation model for archival resources in the Cultura Italia digital library, adapting the ICCD schema to the PICO model.
+\item Developed a conceptual representation model for archival resources (from PICO to EDM) to enable metadata harvesting from Cultura Italia to the Europeana Digital Library.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2006-2008}{Research Fellow}{\textsc{Universita degli Studi di Firenze}}{PIN, P.zza Ciardi Prato -EPOCH project-}{}{ 
+\newline{}\newline{}
+\textbf{Detailed achievement}
+\begin{itemize}
+    \item Created an ontologial structure for the management of the archaeological records.
+\end{itemize}
+\textbf{Research activities}
+\begin{itemize}
+\item Investigated knowledge model representation in archaeology domain
+\item Investigated CIDOC-CRM ontology.
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\cvitemwithcomment{Italian}{Mother language}{}
+\cvitemwithcomment{English}{Advanced}{}
+\cvitemwithcomment{German}{Conversationally fluent}{}
+\newpage
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{IT skills}
+\subsection{Programming Languages}
+\cvitem{Advanced}{Python, R, OWL, RDF, SHACL, SWRL}
+\subsection{Tools and Services}
+\cvitem{GIS Tools}{QGIS, GrassGIS, MapServer, GeoServer}
+\cvitem{Data Management}{PostgreSQL,PostGIS, MySQL, MongoDB }
+\cvitem{Triple Store and reasoning engine}{Sesame, Virtuoso, Blazegraph, Jena}
+\cvitem{Semantic platform}{ResearchSapce}
+\subsection{Ontologies and Metadata Profiles}
+\cvitem{Ontologies}{CIDOC-CRM, DOLCE, EDM}
+\cvitem{Metadata profile}{Dublin Core, Mets, VRA, PICO, TEI, CMDI}
+
+\begin{comment}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+\cvitem{}{Excellent written and verbal communication skills}
+\cvitem{}{Confident, articulate, and professional speaking abilities (and experience)}
+\cvitem{}{Empathic listener and persuasive speaker}
+\cvitem{}{Writing creative or factual}
+\cvitem{}{Speaking in public, to groups, or via electronic media}
+\cvitem{}{Excellent presentation and negotiation skills}
+\end{comment}
+
+%\section{References}
+%\begin{cvcolumns}
+  %\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  %\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  %\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+\section{Conferences and Seminars}
+
+\cventry{2020}{}{}{}{}{
+%\newline{}\newline{}
+\textbf{Seminars}:
+\begin{itemize}
+\item The Getty Reasearch Institute. Title of the talk: Data ingestion pipeline definition for archival data in the ResearchSpace platform. 
+\item Fondazione Bruno Kessler, DH Lab. Title of the talk: Machine Learning and Cultural Heritage: Main Applications and Future Perspectives.
+\item ETH Zurich, Institute for the History and Theory of Architecture. Title of the talk: ETL pipeline process. How to transform a large scale dataset in triples: The Experimental Design Research Portal 
+\end{itemize}
+}
+
+\cventry{2019}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conference}:
+\begin{itemize}
+\item Digital Humanities, DH 2019. Title of the talk: Computer Assisted Curation of Digital Cultural Heritage Repositories. 
+\end{itemize}
+}
+
+\cventry{2018}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conference}:
+\begin{itemize}
+\item International Conference of the Italian Association for Artificial Intelligence, AIxIA 2018. Title of the talk: Automatic Metadata Curation of Cultural Heritage Resources
+\end{itemize}
+\textbf{Seminars}:
+\begin{itemize}
+\item Fondazione Bruno Kessler, DH Lab. Title of the talk: Metadata quality evaluation in cultural heritage repository.
+\item Fondazione Bruno Kessler, DH Lab. Title of the talk: The usage of CIDOC-CRM ontology in archaeology.
+\end{itemize}
+}
+
+\cventry{2017}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conferences}:
+\begin{itemize}
+\item Digital Humanities, DH 2017 Title of the talk: Lifting the knowledge from Medieval Age: CIDOC-CRM for Nurcara Project.
+\item Clarin annual conference. Title of the talk: Something will be Connected - Semantic Mapping from CMDI to PARTHENOS Entities
+\end{itemize}
+\textbf{Seminar}:
+\begin{itemize}
+\item University of Vienna, Digital Humanities Symposium. Title of the talk: CIDOC-CRM and digital archives: Mapping strategies.
+\end{itemize}
+}
+
+\cventry{2015}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Seminar}:
+\begin{itemize} 
+\item Mappa Lab summer school, University of Pisa. Title of the seminar: Semantic definition of archaeological data
+\end{itemize}
+}
+
+\cventry{2014}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Seminar}:
+\begin{itemize} 
+\item Mappa Lab summer school, University of Pisa. Title of the seminar: Semantic definition of archaeological data
+\end{itemize}
+}
+
+\cventry{2013}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conferences}:
+\begin{itemize}
+\item Society for historical archaeology, SHA 2013. Title of the talks:
+\begin{itemize}
+    \item Data and metedata definition of underwater 3D archaeological items.
+    \item Dynamic models to reconstruct ancient coastal landscape: the use of MAXENT algorithm.
+\end{itemize}
+\item Clarin annual conference. Title of the talk: Something will be Connected - Semantic Mapping from CMDI to PARTHENOS Entities
+\end{itemize}
+\textbf{Seminar}:
+\begin{itemize} 
+\item Center For Spatial and Textual Analysis -CESTA-, Stanford University. Title of the seminar: The usage of the CIDOC-CRM ontology for textual mapping.
+\end{itemize}
+}
+
+\cventry{2012}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conference}:
+\begin{itemize} 
+\item Computer Applications and Quantitative Methods in Archaeology Conference, CAA 2012. Title of the talk: The use of standardized vocabularies in archaeology PICO thesaurus, a semantic solution for CulturaItalia project. 
+\end{itemize}
+}
+
+\cventry{2010}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conference}:
+\begin{itemize} 
+\item Computer Applications and Quantitative Methods in Archaeology Conference, CAA 2010. Title of the talks: \begin{itemize}
+    \item A novel approach to 3D documentation and description of archaeological features.
+    \item PICO application profile, an interoperable format for CulturaItalia.
+\end{itemize} 
+\end{itemize}
+}
+
+\cventry{2009}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conference}:
+\begin{itemize} 
+\item 3D Virtual Reconstruction and Visualization of Complex
+Architectures, 3D ARCH 2009. Title of the talk: Semantic Approach to 3D historical
+reconstruction.
+\end{itemize}
+}
+
+\cventry{2008}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conferences}:
+\begin{itemize} 
+\item ArcheoFoss. Title of the talk: Ontologie di applicazione e informazione geografica: la ricognizione nel territorio di Siligo (SS). 
+\item nternational Conference for Meroitic Studies. Title of the talk: 3D reconstruction of the Lion Temple at Musawwarat es Sufra: 3D Model and Domain Ontologies
+\end{itemize}
+}
+
+\cventry{2007}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conferences}:
+\begin{itemize}
+\item Computer Applications and Quantitative Methods in Archaeology Conference, CAA 2007. Title of the talk: Spatial and Non-Spatial Archaeological Data Integration using MAD. 
+\item ArcheoFoss. Title of the talk: Dati archeologici spaziali e non spaziali con MAD 
+\end{itemize}
+}
+\cventry{2006}{}{}{}{}{
+\newline{}\newline{}
+\textbf{Conferences}:
+\begin{itemize}
+\item Computer Applications and Quantitative Methods in Archaeology Conference, CAA 2006. Title of the talk:Find info:A relational database for standardization and automation of quantitative analysis of finds about stratigraphic exavation.
+\item International Symposium On Virtual Reality, Archaeology and Cultural Heritage, VAST 2006. Title of the Talk: 3D data and semantic interoperability in archaeology. 
+\end{itemize}
+}
+\bibliography{publications}
+\bibliographystyle{plain}
+\bibentry{pub1,pub2,pub3,pub4,pub5,pub6,pub7,pub8,pub9,pub10,pub11,pub12,pub13,pub14,pub15,pub16,pub17,pub18,pub19}
+
+\begin{comment} 
+\section{Dichiarazione di veridicit\`a (Ai sensi degli artt. 46 e 47 del D.P.R. 28 dicembre 2000, n. 445)}
+
+Io sottoscritto Lorenzini Matteo, nato a Livorno il 14 Luglio 1981, residente in Eichenstra{\ss}e 19,
+4054, Basel (CH), ai sensi e per gli e etti degli artt. 38, 46 e 47 del D.P.R. 445/2000 e s.m. e i.,
+consapevole delle sanzioni penali previste dall' articolo 76 del D.P.R. 28 Dicembre 2000,
+n.445/2000 e s.m e i. nelle ipotesi di falsit{\' a} in atti e dichiarazioni mendaci che, costituisce
+condotta punibile ai sensi del codice penale e delle leggi speciali in materia
+\begin{center}
+    \textbf{DICHIARO}
+\end{center}
+la veridicit{\`a} delle informazioni riportate nel presente \textit{curriculum vitae}.
+\begin{center}
+    \textbf{DICHIARO}
+\end{center}
+di essere in possesso dei dei titoli riportati nel presente \textit{curriculum vitae}.
+\newline
+\newline
+Inoltre, autorizzo il trattamento dei miei dati personali ai sensi del D.Lgs 30 giugno 2003, n. 196
+``Codice in materia di protezione dei dati personali'' e dell' art. 13 del GDPR (Regolamento UE
+2016/679).
+\end{comment}
+\clearpage
+%-----       letter       ---------------------------------------------------------
+\begin{comment} PER ELIMINARE LETTERA DECOMMENTARE 
+% recipient data
+\recipient{Kunsthistorisches Institut in Florenz \newline
+Max Planck Institute
+Florence, Italy}{}
+
+\date{September 30, 2024}
+\opening{Dear Members of the Selection Committee,}
+\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing to express my strong interest in the position related to the "Malandrini Collection" project at the Photothek, as advertised. With my extensive background in designing and developing semantic digital infrastructure for cultural heritage projects, combined with my passion for photography, I believe I am particularly well-suited to contribute to this initiative.
+
+Over the past decade, I have gained significant expertise in the field of cultural heritage digitization, ontology development, and metadata management. My role as a Project Researcher Specialist at ETH Z\"urich and my work at Cultura Italia within the Italian Ministry of Cultural Heritage and Activities have allowed me to design, develop, and implement robust digital frameworks for archiving and cataloguing large-scale cultural assets. Notably, I designed the PICO metadata schema for Cultura Italia, built a Linked Open Data infrastructure, and automated processes to enhance the accessibility and usability of archival collections.
+
+Furthermore, during my tenure at ETH Z\"urich, I modeled over 150,000 archival records using the CIDOC-CRM ontology and developed Python scripts to streamline the ETL process and metadata analysis. These experiences have deepened my understanding of how to structure and manage large archival collections and make them more accessible for both scholarly research and public engagement.
+
+In addition to my technical skills, I am deeply passionate about photography both professionally and personally. I have been shooting with analog cameras for many years, and I continue to develop and print my own photographs. This personal engagement with the photographic process gives me a nuanced appreciation of historical photographic techniques, and I am particularly enthusiastic about contributing to the digitization and curation of the Malandrini Collection. 
+
+I am eager to collaborate with your team in exploring the possibilities of this important collection and contributing to its accessibility through the Photothek's digital platform.
+
+I look forward to the opportunity to discuss how my skills and experiences align with the goals of the project. Thank you for considering my application.
+
+
+
+
+\makeletterclosing
+\end{comment}
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
